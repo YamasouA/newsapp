@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        {% for i in response_json['articles'] %}
+        <p>{{i['title']}}</p>
+        {% endfor %}
+    </body>
+</html>
