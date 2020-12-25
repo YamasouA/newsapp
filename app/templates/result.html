@@ -4,8 +4,13 @@
         <title>Home page</title>
     </head>
     <body>
+        <a href="/index">検索画面に戻る</a>
         {% for i in response_json['articles'] %}
-        <p>{{i['title']}}</p>
+        <div>
+            <p><img src="{{i['urlToImage']}}" alt="" width="500" height="300"></p>
+            <a href={{i['url']}}>{{i['title']}}</a>
+        </div>
         {% endfor %}
     </body>
+    <a href="/index">検索画面に戻る</a>
 </html>
